@@ -1,0 +1,12 @@
+/obj/
+/bin/
+/.vs/
+/Dependencies/*.exe
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.zip
+*.log

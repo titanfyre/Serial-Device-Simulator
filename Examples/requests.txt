@@ -1,0 +1,14 @@
+Modbus RTU, unit 1, read holding register 0 (zero-based):
+  Request:  01 03 00 00 00 01 84 0A
+  Default response (3300): 01 03 02 0C E4 BC CF
+
+SCPI subset, each line terminated with LF or CRLF:
+  *IDN?
+  MEAS:VOLT?
+  SOUR:VOLT 12.345
+  SOUR:VOLT?
+  OUTP ON
+  OUTP?
+  SYST:ERR?
+
+These are local simulated devices. No physical equipment is controlled.
