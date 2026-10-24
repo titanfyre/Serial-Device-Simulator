@@ -2,7 +2,7 @@
 
 > **Engineering preview: live COM transport is not validated.** Offline protocol and memory checks pass, but a disposable Windows 10 VM selected `usbser.sys` and then stalled during device startup. No successful serial transfer was verified, and guest shutdown also stalled. Usable application/driver release binaries are withheld while the backend is investigated. Do not deploy this preview on a production PC.
 
-**Test a Windows serial client against a virtual Modbus RTU device or a small SCPI instrument, using a real COM port.** Change register values live, inspect requests/replies and develop client software without a physical PLC, meter or power supply.
+**A C++ protocol simulator for Modbus RTU and a small SCPI instrument.** The tested offline model supports editable registers and bounded request/reply processing. Its experimental Vdevice USB CDC backend is intended to expose an ordinary Windows COM port; live transport remains unverified as stated above.
 
 ![Offline application preview](docs/app.png)
 
