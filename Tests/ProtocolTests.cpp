@@ -8,7 +8,7 @@ void Check(bool b,const char* text){++checks;if(!b)throw std::runtime_error(text
 std::vector<Bytes> Send(Engine& e,Bytes data){return e.Feed(WithCrc(std::move(data)),1);}
 int main()try{
     Check(Crc16({1,3,0,0,0,10})==0xCDC5,"Known Modbus CRC");
-    Engine e;auto r=Send(e,{1,3,0,0,0,1});Check(r.size()==1&&r[0]==WithCrc({1,3,2,12,228}),"Read default register");
+    Engine e;auto r=Send(e,{1,3,0,0,0,1});Check(r.size()==1&&r[0]==Bytes({1,3,2,12,228,0xBD,0x0F}),"Read default register");
     r=Send(e,{1,6,0,1,0,42});Check(r.size()==1&&e.Snapshot().holding[1]==42,"Write single register");
     r=Send(e,{1,16,0,2,0,2,4,0,7,0,8});Check(r.size()==1&&e.Snapshot().holding[3]==8,"Write multiple registers");
     const auto before=e.Snapshot().holding;r=Send(e,{1,16,0,2,0,2,2,0,9});Check(!r.empty()&&r[0][2]==3&&e.Snapshot().holding==before,"Invalid multi-write is atomic");
