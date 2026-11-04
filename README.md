@@ -56,6 +56,12 @@ A ready-to-deploy COM simulator is not yet available. For a scoped OEM simulator
 
 ## Build and verify
 
+The matching Vdevice demo driver source is available; see
+[driver/README.md](driver/README.md) for build instructions and separate
+evaluation-source terms. Those terms apply to Titan-authored driver code. Third-party
+source licenses and existing application/SDK licenses remain applicable. Full/commercial
+implementation and private signing or activation material are excluded.
+
 Visual Studio 2022 C++ tools, CMake and Windows SDK are required:
 
 ```powershell
