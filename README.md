@@ -50,7 +50,7 @@ Modbus known-length requests are assembled across USB chunks. A **20 ms applicat
 
 [Vdevice](https://github.com/TitanCSA/Vdevice) supplies the virtual USB controller. This application describes a **USB CDC ACM** function; Windows' inbox **usbser.sys** supplies its native COM interface. No new kernel driver or per-instrument INF is introduced. The example identity `FFFF:CDC1` is for local development, not an assigned production USB VID/PID.
 
-The public driver has a **one-hour demo allowance per Windows boot**, shared with other applications using that Vdevice edition. Windows **Restart** renews the allowance. Application source is MIT licensed; the kernel driver is closed source with separate binary terms. Microsoft signing covers the driver package and does not certify this EXE or promise compatibility with every client.
+The public driver has a **one-hour demo allowance per Windows boot**, shared with other applications using that Vdevice edition. Windows **Restart** renews the allowance. Application source is MIT licensed. The matching timed demo driver source is [published under driver/](driver/README.md), with the [file-specific license map](driver/LICENSE-MAP.txt); driver binaries have separate terms. Full/commercial driver source and private signing or activation material remain excluded. Microsoft signing covers the driver package and does not certify this EXE or promise compatibility with every client.
 
 A ready-to-deploy COM simulator is not yet available. For a scoped OEM simulator, additional protocol or integration discussion, add **`titancsa`** on Discord (**Friends > Add Friend**) and mention this project. Commercial scope and terms are agreed before payment. Public source has no application-layer paywall.
 
