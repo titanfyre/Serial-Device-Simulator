@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Explore serial-device simulations without a real device.
 
-**Start here.** Start with the offline examples. A working Windows COM port is still under test.
+[First steps](#first-steps) · [Develop](#build-and-verify) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Start with the offline examples. A working Windows COM port is still under test.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
