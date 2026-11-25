@@ -1,5 +1,15 @@
 # Serial Device Simulator
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Get the version without the one-hour demo limit**
+>
+> **Discord · `titancsa`**. Open [Discord](https://discord.com/app), choose **Friends → Add Friend**, enter **`titancsa`** and send a message.
+> Send the project name and ask for its full version. TitanCSA will share the purchase details privately.
+>
+> **FR · Version sans la limite d’une heure.** Ajoute **`titancsa`** sur Discord et envoie le nom du projet. Le lien d’achat est communiqué en privé.
+<!-- full-version-contact:end -->
+
 > **Engineering preview: live COM transport is not validated.** Offline protocol and memory checks pass, but a disposable Windows 10 VM selected `usbser.sys` and then stalled during device startup. No successful serial transfer was verified, and guest shutdown also stalled. Usable application/driver release binaries are withheld while the backend is investigated. Do not deploy this preview on a production PC.
 
 **A C++ protocol simulator for Modbus RTU and a small SCPI instrument.** The tested offline model supports editable registers and bounded request/reply processing. Its experimental Vdevice USB CDC backend is intended to expose an ordinary Windows COM port; live transport remains unverified as stated above.
@@ -71,13 +81,4 @@ Use only for authorized development and testing. This simulated state must not b
 
 ## Commercial integration and support
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full version / production availability**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Serial Device Simulator** and ask about **full-version availability, production licensing or a commercial integration**.
->
-> Describe your intended use and target Windows versions so we can agree on the scope, availability and pricing.
-<!-- full-version-contact:end -->
+
